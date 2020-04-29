@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" >
+
+        <TextView
+            android:id="@+id/textViewKana"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#333333"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                tools:ignore="NestedWeights">
+
+                <com.example.bresso.BrailleButton
+                    android:id="@+id/brailleButton1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/braille_button_str1"
+                    android:textSize="32sp"
+                    style="?android:attr/borderlessButtonStyle"
+                    tools:ignore="NestedWeights" />
+
+                <com.example.bresso.BrailleButton
+                    android:id="@+id/brailleButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="@string/braille_button_str2"
+                    android:textSize="32sp"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_weight="1"/>
+
+                <com.example.bresso.BrailleButton
+                    android:id="@+id/brailleButton3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="@string/braille_button_str3"
+                    android:textSize="32sp"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.example.bresso.BrailleButton
+                    android:id="@+id/brailleButton4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="@string/braille_button_str4"
+                    android:textSize="32sp"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_weight="1"/>
+
+                <com.example.bresso.BrailleButton
+                    android:id="@+id/brailleButton5"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="@string/braille_button_str5"
+                    android:textSize="32sp"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_weight="1"/>
+
+                <com.example.bresso.BrailleButton
+                    android:id="@+id/brailleButton6"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="@string/braille_button_str6"
+                    android:textSize="32sp"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                
+                <Button
+                    android:id="@+id/buttonClear"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/clear_button_str"
+                    android:textSize="18sp"
+                    android:textColor="#eeeeee"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:background="@drawable/clear_button_background"/>
+
+                <Button
+                    android:id="@+id/buttonSpeak"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:text="@string/speak_button_str"
+                    android:textSize="18sp"
+                    android:textColor="#eeeeee"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:background="@drawable/speak_button_background"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Bresso</string>
+
+    // Button text
+    <string name="braille_button_str1">1</string>
+    <string name="braille_button_str2">2</string>
+    <string name="braille_button_str3">3</string>
+    <string name="braille_button_str4">4</string>
+    <string name="braille_button_str5">5</string>
+    <string name="braille_button_str6">6</string>
+    <string name="clear_button_str">CL</string>
+    <string name="speak_button_str">Speak</string>
+</resources>
