@@ -10,7 +10,6 @@ import androidx.appcompat.widget.AppCompatButton;
 /**
  * 点字ボタンクラス。
  */
-
 public class BrailleButton extends AppCompatButton implements Checkable {
     private boolean checked = false;
 
@@ -48,7 +47,6 @@ public class BrailleButton extends AppCompatButton implements Checkable {
 
     /**
      * 色を変更する。
-     * 。
      */
     void changeColor() {
         if (checked) {

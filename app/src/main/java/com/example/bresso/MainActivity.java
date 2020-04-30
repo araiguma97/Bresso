@@ -1,6 +1,7 @@
 package com.example.bresso;
 
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.media.AudioManager;
 import android.media.SoundPool;
 import android.net.Uri;
@@ -142,7 +143,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             textViewKana.setTextSize(72.0f);
             textViewKana.setText("");
             soundIndex = 0;
-        } else {
+            return;
+        }
+
+        int orientation = getResources().getConfiguration().orientation;
+        if (orientation == Configuration.ORIENTATION_PORTRAIT) {
             if (braille.getKana().length() == 1) {
                 // 点字がかなであれば、大きい文字サイズで表示する
                 textViewKana.setTextSize(108.0f);
@@ -150,8 +155,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 // 点字が記号類であれば、小さい文字サイズで表示する
                 textViewKana.setTextSize(72.0f);
             }
-            textViewKana.setText(braille.getKana());
-            soundIndex = braille.getIndex();
+        } else {
+            // 画面が横向きであれば、小さい文字サイズで表示する
+            textViewKana.setTextSize(56.0f);
         }
+        textViewKana.setText(braille.getKana());
+        soundIndex = braille.getIndex();
     }
 }
