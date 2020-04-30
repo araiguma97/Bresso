@@ -38,7 +38,7 @@
                 android:orientation="vertical"
                 tools:ignore="NestedWeights">
 
-                <com.example.bresso.BrailleButton
+                <com.araiguma97.bresso.BrailleButton
                     android:id="@+id/brailleButton1"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
@@ -48,7 +48,7 @@
                     style="?android:attr/borderlessButtonStyle"
                     tools:ignore="NestedWeights" />
 
-                <com.example.bresso.BrailleButton
+                <com.araiguma97.bresso.BrailleButton
                     android:id="@+id/brailleButton2"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
@@ -57,7 +57,7 @@
                     style="?android:attr/borderlessButtonStyle"
                     android:layout_weight="1"/>
 
-                <com.example.bresso.BrailleButton
+                <com.araiguma97.bresso.BrailleButton
                     android:id="@+id/brailleButton3"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
@@ -74,7 +74,7 @@
                 android:layout_weight="1"
                 android:orientation="vertical">
 
-                <com.example.bresso.BrailleButton
+                <com.araiguma97.bresso.BrailleButton
                     android:id="@+id/brailleButton4"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
@@ -83,7 +83,7 @@
                     style="?android:attr/borderlessButtonStyle"
                     android:layout_weight="1"/>
 
-                <com.example.bresso.BrailleButton
+                <com.araiguma97.bresso.BrailleButton
                     android:id="@+id/brailleButton5"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
@@ -92,7 +92,7 @@
                     style="?android:attr/borderlessButtonStyle"
                     android:layout_weight="1"/>
 
-                <com.example.bresso.BrailleButton
+                <com.araiguma97.bresso.BrailleButton
                     android:id="@+id/brailleButton6"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
